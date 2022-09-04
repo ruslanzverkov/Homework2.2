@@ -15,6 +15,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setIntellect(int intellect) {
+        if (intellect < 0 || intellect > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.intellect = intellect;
     }
 
@@ -23,6 +26,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setWisdom(int wisdom) {
+        if (wisdom < 0 || wisdom > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.wisdom = wisdom;
     }
 
@@ -31,6 +37,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setCreativity(int creativity) {
+        if (creativity < 0 || creativity > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.creativity = creativity;
     }
 

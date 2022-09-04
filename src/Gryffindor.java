@@ -17,6 +17,9 @@ public class Gryffindor extends Hogwarts{
     }
 
     public void setNobility(int nobility) {
+        if (nobility < 0 || nobility > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.nobility = nobility;
     }
 
@@ -25,6 +28,9 @@ public class Gryffindor extends Hogwarts{
     }
 
     public void setHonor(int honor) {
+        if (honor < 0 || honor > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.honor = honor;
     }
 
@@ -33,6 +39,9 @@ public class Gryffindor extends Hogwarts{
     }
 
     public void setBravery(int bravery) {
+        if (bravery < 0 || bravery > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.bravery = bravery;
     }
 
@@ -45,10 +54,5 @@ public class Gryffindor extends Hogwarts{
     }
 
 
-
-    public void abilitiesStudent() {
-        int abilities=0;
-        abilities=getBravery()+getNobility()+getHonor();
-    }
 
 }

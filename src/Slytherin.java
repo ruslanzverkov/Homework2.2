@@ -10,6 +10,9 @@ public class Slytherin extends Hogwarts{
     }
 
     public void setTrick(int trick) {
+        if (trick < 0 || trick > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.trick = trick;
     }
 
@@ -18,6 +21,9 @@ public class Slytherin extends Hogwarts{
     }
 
     public void setDetermination(int determination) {
+        if (determination < 0 || determination > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.determination = determination;
     }
 
@@ -26,6 +32,9 @@ public class Slytherin extends Hogwarts{
     }
 
     public void setAmbition(int ambition) {
+        if (ambition < 0 || ambition > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.ambition = ambition;
     }
 
@@ -34,6 +43,9 @@ public class Slytherin extends Hogwarts{
     }
 
     public void setResourcefulness(int resourcefulness) {
+        if (resourcefulness < 0 || resourcefulness > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.resourcefulness = resourcefulness;
     }
 
@@ -42,6 +54,9 @@ public class Slytherin extends Hogwarts{
     }
 
     public void setLustForPower(int lustForPower) {
+        if (lustForPower < 0 || lustForPower > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.lustForPower = lustForPower;
     }
 

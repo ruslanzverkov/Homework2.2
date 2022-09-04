@@ -15,6 +15,9 @@ public class Puffendyi extends Hogwarts{
     }
 
     public void setIndustriousness(int industriousness) {
+        if (industriousness < 0 || industriousness > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.industriousness = industriousness;
     }
 
@@ -23,6 +26,9 @@ public class Puffendyi extends Hogwarts{
     }
 
     public void setLoyalty(int loyalty) {
+        if (loyalty < 0 || loyalty > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.loyalty = loyalty;
     }
 
@@ -31,6 +37,9 @@ public class Puffendyi extends Hogwarts{
     }
 
     public void setHonesty(int honesty) {
+        if (honesty < 0 || honesty > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.honesty = honesty;
     }
 

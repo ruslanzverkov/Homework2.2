@@ -22,6 +22,9 @@ public class Hogwarts {
     }
 
     public void setPowerOfMagic(int powerOfMagic) {
+        if (powerOfMagic < 0 || powerOfMagic > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.powerOfMagic = powerOfMagic;
     }
 
@@ -30,6 +33,9 @@ public class Hogwarts {
     }
 
     public void setDistanceTransgression(int distanceTransgression) {
+        if (distanceTransgression < 0 || distanceTransgression > 100) {
+            throw new RuntimeException("Введено неверное значение");
+        }
         this.distanceTransgression = distanceTransgression;
     }
 
