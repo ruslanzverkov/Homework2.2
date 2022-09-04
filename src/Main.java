@@ -9,6 +9,8 @@ public class Main {
         for (int i = 0; i < gryffindors.length; i++) {
             System.out.println(gryffindors[i]);
         }
+
+
         System.out.println("------------------------------------------------------------------------------------------");
 
         Puffendyi[] puffendyis = new Puffendyi[3];

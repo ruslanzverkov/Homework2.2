@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Gryffindor extends Hogwarts{
     public int nobility;
     public int honor;
@@ -41,4 +43,12 @@ public class Gryffindor extends Hogwarts{
                 ", honor=" + honor +
                 ", bravery=" + bravery+";" ;
     }
+
+
+
+    public void abilitiesStudent() {
+        int abilities=0;
+        abilities=getBravery()+getNobility()+getHonor();
+    }
+
 }
