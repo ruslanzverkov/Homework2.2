@@ -32,4 +32,5 @@ public class Hogwarts {
     public void setDistanceTransgression(int distanceTransgression) {
         this.distanceTransgression = distanceTransgression;
     }
+
 }
