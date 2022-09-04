@@ -1,4 +1,4 @@
-public class Kogtevran extends Hogwarts{
+public class Kogtevran extends Hogwarts {
     public int intellect;
     public int wisdom;
     public int creativity;
@@ -32,5 +32,14 @@ public class Kogtevran extends Hogwarts{
 
     public void setCreativity(int creativity) {
         this.creativity = creativity;
+    }
+
+    @Override
+    public String toString() {
+        return "Kogtevran:" +super.toString()+
+                "intellect=" + intellect +
+                ", wisdom=" + wisdom +
+                ", creativity=" + creativity +
+                "; "  ;
     }
 }

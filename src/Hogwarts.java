@@ -33,4 +33,11 @@ public class Hogwarts {
         this.distanceTransgression = distanceTransgression;
     }
 
+    @Override
+    public String toString() {
+        return
+                "fullName='" + fullName + '\'' +"-"+
+                " powerOfMagic=" + powerOfMagic +
+                ", distanceTransgression=" + distanceTransgression +",";
+    }
 }

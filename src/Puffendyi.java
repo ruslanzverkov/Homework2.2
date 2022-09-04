@@ -33,4 +33,13 @@ public class Puffendyi extends Hogwarts{
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
+    @Override
+    public String toString() {
+        return "Puffendyi:" +super.toString()+
+                "industriousness=" + industriousness +
+                ", loyalty=" + loyalty +
+                ", honesty=" + honesty +
+                ";"  ;
+    }
 }
