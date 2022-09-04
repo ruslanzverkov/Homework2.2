@@ -51,4 +51,9 @@ public class Kogtevran extends Hogwarts {
                 ", creativity=" + creativity +
                 "; "  ;
     }
+    public int abilitiesKogtevran(){
+        int abilities;
+        abilities=getCreativity()+getIntellect()+getWisdom();
+        return abilities;
+    }
 }

@@ -51,4 +51,10 @@ public class Puffendyi extends Hogwarts{
                 ", honesty=" + honesty +
                 ";"  ;
     }
+    public int abilitiesPuffendyi(){
+        int abilities;
+        abilities=getHonesty()+getIndustriousness()+getLoyalty();
+        return abilities;
+    }
+
 }

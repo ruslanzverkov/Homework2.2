@@ -54,5 +54,10 @@ public class Gryffindor extends Hogwarts{
     }
 
 
+    public int abilitiesGryffindor(){
+        int abilities;
+        abilities=getBravery()+getHonor()+getNobility();
+        return abilities;
+    }
 
 }

@@ -9,6 +9,10 @@ public class Main {
         for (int i = 0; i < gryffindors.length; i++) {
             System.out.println(gryffindors[i]);
         }
+        for (int i = 0; i < gryffindors.length-1; i++) {
+            if (gryffindors[i].abilitiesGryffindor()>gryffindors[i+1].abilitiesGryffindor());
+            System.out.println(gryffindors[i].getFullName()+" лучший грифендорц чем "+gryffindors[i+1].getFullName());
+        }
 
 
         System.out.println("------------------------------------------------------------------------------------------");
@@ -21,6 +25,11 @@ public class Main {
         for (int i = 0; i < puffendyis.length; i++) {
             System.out.println(puffendyis[i]);
         }
+        for (int i = 0; i < puffendyis.length-1; i++) {
+            if (puffendyis[i].abilitiesPuffendyi()>puffendyis[i+1].abilitiesPuffendyi());
+            System.out.println(puffendyis[i].getFullName()+" лучший пуфендуец чем "+puffendyis[i+1].getFullName());
+        }
+
         System.out.println("------------------------------------------------------------------------------------------");
 
         Kogtevran[] kogtevrans = new Kogtevran[3];
@@ -31,6 +40,12 @@ public class Main {
         for (int i = 0; i < kogtevrans.length; i++) {
             System.out.println(kogtevrans[i]);
         }
+
+        for (int i = 0; i < kogtevrans.length-1; i++) {
+            if (kogtevrans[i].abilitiesKogtevran()>kogtevrans[i+1].abilitiesKogtevran());
+            System.out.println(kogtevrans[i].getFullName()+" лучший когтевранец чем "+kogtevrans[i+1].getFullName());
+        }
+
         System.out.println("------------------------------------------------------------------------------------------");
 
         Slytherin[] slytherins=new Slytherin[3];
@@ -41,6 +56,11 @@ public class Main {
         for (int i = 0; i < slytherins.length; i++) {
             System.out.println(slytherins[i]);
         }
+        for (int i = 0; i < slytherins.length-1; i++) {
+            if (slytherins[i].abilitiesSlytherin()>slytherins[i+1].abilitiesSlytherin());
+            System.out.println(slytherins[i].getFullName()+" лучший слизеринец чем "+slytherins[i+1].getFullName());
+        }
+
         System.out.println("------------------------------------------------------------------------------------------");
 
 

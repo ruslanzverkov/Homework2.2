@@ -81,4 +81,10 @@ public class Slytherin extends Hogwarts{
                 ", lustForPower=" + lustForPower +
                 "; " ;
     }
+    public int abilitiesSlytherin(){
+        int abilities;
+        abilities=getAmbition()+getDetermination()+getTrick()+getResourcefulness()+getLustForPower();
+        return abilities;
+    }
+
 }
