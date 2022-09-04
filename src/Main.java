@@ -9,11 +9,13 @@ public class Main {
         for (int i = 0; i < gryffindors.length; i++) {
             System.out.println(gryffindors[i]);
         }
+        //1й вариант
         for (int i = 0; i < gryffindors.length-1; i++) {
             if (gryffindors[i].abilitiesGryffindor()>gryffindors[i+1].abilitiesGryffindor());
             System.out.println(gryffindors[i].getFullName()+" лучший грифендорц чем "+gryffindors[i+1].getFullName());
         }
-
+        //2й вариант
+        gryffindors[0].abilityStudent(gryffindors[0],gryffindors[1]);
 
         System.out.println("------------------------------------------------------------------------------------------");
 
@@ -25,10 +27,13 @@ public class Main {
         for (int i = 0; i < puffendyis.length; i++) {
             System.out.println(puffendyis[i]);
         }
+        //1й вариант
         for (int i = 0; i < puffendyis.length-1; i++) {
             if (puffendyis[i].abilitiesPuffendyi()>puffendyis[i+1].abilitiesPuffendyi());
             System.out.println(puffendyis[i].getFullName()+" лучший пуфендуец чем "+puffendyis[i+1].getFullName());
         }
+        //2й вариант и т.д.
+        puffendyis[0].abilityPuffendyi(puffendyis[0],puffendyis[1]);
 
         System.out.println("------------------------------------------------------------------------------------------");
 
@@ -46,6 +51,8 @@ public class Main {
             System.out.println(kogtevrans[i].getFullName()+" лучший когтевранец чем "+kogtevrans[i+1].getFullName());
         }
 
+        kogtevrans[0].abilityKogtevran(kogtevrans[1],kogtevrans[2]);
+
         System.out.println("------------------------------------------------------------------------------------------");
 
         Slytherin[] slytherins=new Slytherin[3];
@@ -60,11 +67,11 @@ public class Main {
             if (slytherins[i].abilitiesSlytherin()>slytherins[i+1].abilitiesSlytherin());
             System.out.println(slytherins[i].getFullName()+" лучший слизеринец чем "+slytherins[i+1].getFullName());
         }
+        slytherins[0].abilityStudent(slytherins[1],slytherins[0]);
 
         System.out.println("------------------------------------------------------------------------------------------");
 
-
-
+        slytherins[0].abilityStudent(slytherins[0],gryffindors[1]);
 
 
     }

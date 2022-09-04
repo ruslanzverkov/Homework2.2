@@ -46,4 +46,20 @@ public class Hogwarts {
                 " powerOfMagic=" + powerOfMagic +
                 ", distanceTransgression=" + distanceTransgression +",";
     }
+
+    public int abilitiesHoqwarts(){
+        int abilities;
+        abilities=getDistanceTransgression()+getPowerOfMagic();
+        return abilities;
+    }
+
+    public  void abilityStudent(Hogwarts a,Hogwarts b) {
+        int aA=a.getDistanceTransgression()+a.powerOfMagic;
+        int bB=b.getDistanceTransgression()+b.powerOfMagic;
+        if (aA > bB) {
+            System.out.println(a.getFullName()+" обладает большей мощностью "+b.getFullName());
+        }else {
+            System.out.println(b.getFullName()+" обладает большей мощносстью "+a.getFullName());
+        }
+    }
 }

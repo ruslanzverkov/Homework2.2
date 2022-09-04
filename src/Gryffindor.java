@@ -59,5 +59,16 @@ public class Gryffindor extends Hogwarts{
         abilities=getBravery()+getHonor()+getNobility();
         return abilities;
     }
+    public  void abilityGryffindor(Gryffindor a,Gryffindor b) {
+        int aA=a.getBravery()+a.getNobility()+a.getHonor();
+        int bB=b.getBravery()+b.getHonor()+b.getNobility();
+        if (aA > bB) {
+            System.out.println(a.getFullName()+" больший грифендорец "+b.getFullName());
+        }else {
+            System.out.println(b.getFullName()+" больший грифендорец "+a.getFullName());
+
+        }
+
+    }
 
 }

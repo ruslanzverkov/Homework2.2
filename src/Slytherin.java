@@ -87,4 +87,15 @@ public class Slytherin extends Hogwarts{
         return abilities;
     }
 
+    public  void abilitySlytherin(Slytherin a,Slytherin b) {
+        int aA=a.getAmbition()+a.getTrick()+a.getDetermination()+a.getResourcefulness()+a.getLustForPower();
+        int bB=b.getAmbition()+b.getTrick()+b.getDetermination()+a.getResourcefulness()+b.getLustForPower();
+        if (aA > bB) {
+            System.out.println(a.getFullName()+" больший слизеринец"+b.getFullName());
+        }else {
+            System.out.println(b.getFullName()+" больший слизеринец " +a.getFullName());
+
+        }
+    }
+
 }

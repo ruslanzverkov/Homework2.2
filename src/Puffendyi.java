@@ -57,4 +57,15 @@ public class Puffendyi extends Hogwarts{
         return abilities;
     }
 
+    public  void abilityPuffendyi(Puffendyi a,Puffendyi b) {
+        int aA=a.getHonesty()+a.getLoyalty()+a.getIndustriousness();
+        int bB=b.getHonesty()+b.getLoyalty()+b.getIndustriousness();
+        if (aA > bB) {
+            System.out.println(a.getFullName()+" больший пуфендуец "+b.getFullName());
+        }else {
+            System.out.println(b.getFullName()+" больший пуфендуец "+a.getFullName());
+
+        }
+    }
+
 }

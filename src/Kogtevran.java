@@ -56,4 +56,15 @@ public class Kogtevran extends Hogwarts {
         abilities=getCreativity()+getIntellect()+getWisdom();
         return abilities;
     }
+
+    public  void abilityKogtevran(Kogtevran a,Kogtevran b) {
+        int aA=a.getIntellect()+a.getWisdom()+a.getCreativity();
+        int bB=b.getIntellect()+b.getWisdom()+b.getCreativity();
+        if (aA > bB) {
+            System.out.println(a.getFullName()+" больший когтевранец "+b.getFullName());
+        }else {
+            System.out.println(b.getFullName()+" больший когтевранец "+a.getFullName());
+
+        }
+    }
 }
